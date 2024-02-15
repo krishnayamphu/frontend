@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input[type='checkbox'] {
+            display: inline-block;
+        }
+
+        input[type='radio'] {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="textname">Textfield</label>
+        <input id="textname" type="text" name="textname" placeholder="Enter name" required>
+
+        <input type="password" placeholder="Enter password">
+        <input type="email" placeholder="example@email.com">
+        <input type="search" placeholder="search">
+
+        <input type="checkbox" value="cb1" checked>checkbox 1
+        <input type="checkbox" value="cb2">checkbox 2
+        <br>
+        <input type="radio" name="g" value="m">Male
+        <input type="radio" name="g" value="f">Female
+
+        <input type="number" placeholder="number" step="2">
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="week">
+        <input type="range" min="0" max="100" value="50">
+        <input type="color">
+        <input type="file" multiple>
+
+        <input type="button" value="button">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
