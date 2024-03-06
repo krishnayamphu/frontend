@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .row {
+            margin: 15px;
+            border: 1px solid red;
+            display: flex;
+            height: 100px;
+        }
+
+        .col {
+            background-color: orange;
+        }
+
+        .col:nth-child(even) {
+            background-color: green;
+            padding: 10px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-center {
+            align-items: center;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row stretch">
+        <div class="col">col 1</div>
+        <div class="col">col 2 <br>content</div>
+        <div class="col">col 3</div>
+    </div>
+    <div class="row flex-start">
+        <div class="col">col 1</div>
+        <div class="col">col 2 <br>content</div>
+        <div class="col">col 3</div>
+    </div>
+    <div class="row flex-center">
+        <div class="col">col 1</div>
+        <div class="col">col 2 <br>content</div>
+        <div class="col">col 3</div>
+    </div>
+    <div class="row baseline">
+        <div class="col">col 1</div>
+        <div class="col">col 2 <br>content</div>
+        <div class="col">col 3</div>
+    </div>
+
+
+</body>
+
+</html>

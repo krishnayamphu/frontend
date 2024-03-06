@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        div:hover {
+            background-color: green;
+            border-radius: 50%;
+            transition: all 5s;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h1:hover {
+            font-size: 100px;
+            transition-property: font-size;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>box</div>
+
+    <h1>Hello World</h1>
+</body>
+
+</html>

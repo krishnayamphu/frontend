@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(103, 155, 88);
+    padding: 30px;
+}
+nav{
+    background-color: rgb(146, 163, 222);
+    padding: 10px 30px;
+}
+main{
+    background-color: antiquewhite;
+}
+.content{
+    background-color: rgb(118, 118, 205);
+    width: 75%;
+    float: left;
+}
+section{
+    background-color: rgb(222, 115, 246);
+    height: 100px;
+}
+article{
+    height: 100px;
+}
+aside{
+    background-color: rgb(123, 222, 156);
+    width: 25%;
+    height: 200px;
+    float: left;
+}
+
+footer{
+    background-color: rgb(243, 150, 136);
+    padding: 20px 30px;
+    clear: both;
+}

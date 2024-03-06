@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 150px;
+            border: 1px solid red;
+            padding: 15px;
+            margin: 15px;
+            float: left;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .hidden-x {
+            overflow-x: hidden;
+        }
+
+        .hidden-y {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="visible">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque, eligendi explicabo ab hic omnis sint,
+            commodi cumque voluptates saepe numquam? Ratione cumque aliquam iusto tempora fugiat? Laborum, asperiores
+            dolore!</p>
+    </div>
+    <div class="hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque, eligendi explicabo ab hic omnis sint,
+            commodi cumque voluptates saepe numquam? Ratione cumque aliquam iusto tempora fugiat? Laborum, asperiores
+            dolore!</p>
+    </div>
+    <div class="scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque, eligendi explicabo ab hic omnis sint,
+            commodi cumque voluptates saepe numquam? Ratione cumque aliquam iusto tempora fugiat? Laborum, asperiores
+            dolore!</p>
+    </div>
+
+    <div class="hidden">
+        <img src="pic.PNG" alt="">
+    </div>
+
+    <div class="hidden-x">
+        <img src="pic.PNG" alt="">
+    </div>
+
+    <div class="hidden-y">
+        <img src="pic.PNG" alt="">
+    </div>
+</body>
+
+</html>

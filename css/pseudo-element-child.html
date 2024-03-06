@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        p:first-child {
+            color: green;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        p:nth-child(2) {
+            color: yellow;
+        }
+
+        ul li:nth-child(odd) {
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: grey;
+        }
+
+        input {
+            border: none;
+            outline: 1px solid brown;
+        }
+
+        input:focus {
+
+            outline: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+    <p>paragraph 4</p>
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Namd</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <input type="text" placeholder="Enter name">
+
+</body>
+
+</html>
