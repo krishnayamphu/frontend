@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .my-heading {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .my-heading span {
+            color: rgb(236, 183, 115);
+        }
+
+        @media (max-width: 767.98px) {
+            .chat-img {
+                width: 200px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="intro" class="bg-success py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h1 class="my-heading">Solving problems for every <span>startup.</span></h1>
+                    <p class="fw-bold text-light">
+                        Built on standard web technology, teams use Space to build beautiful cross-platform hybrid apps
+                        in a
+                        fraction of the
+                        time.
+                    </p>
+                    <div class="row">
+                        <div class="col">dsf</div>
+                        <div class="col">adsf</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-success">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-4 order-lg-2">
+                                <div class="p-3">
+                                    <img class="w-100 chat-img" src="images/oc-chatting.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-lg-1">
+                                <div class="card p-3 border-0">
+                                    <h3>Join Space</h3>
+                                    <p>
+                                        Hundreds of companies using Space to build their business.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <form action="" class="p-3">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control px-3 py-3" id="name"
+                                    placeholder="Type your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control px-3 py-3" id="email"
+                                    placeholder="name@example.com">
+                            </div>
+
+                            <label class="form-label">Company Size</label>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="border rounded p-2">
+                                        <input class="form-check-input" type="radio" name="company" id="c1" value="10">
+                                        <label class="form-check-label" for="c1">1-10</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+                                    <div class="border rounded p-2">
+                                        <input class="form-check-input" type="radio" name="company" id="c1" value="10">
+                                        <label class="form-check-label" for="c1">More than 10</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-success w-100 my-4">
+                                Start your free 30-days trial
+                            </button>
+
+                            <div>
+                                <p class="text-center text-secondary">
+                                    Need help? <a href="#" class="text-success text-decoration-none"><strong>Visit our
+                                            Help
+                                            Center</strong></a>
+                                </p>
+                            </div>
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
