@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        h1::first-letter {
+            color: red;
+            font-size: 60px;
+            font-style: italic;
+        }
+
+        h1::after {
+            content: url(emoji.PNG);
+        }
+
+        p::first-line {
+            color: green;
+        }
+
+        span::before {
+            content: open-quote;
+        }
+
+        span::after {
+            content: close-quote;
+        }
+
+        ::selection {
+            background-color: orangered;
+            color: black;
+        }
+
+        ::-moz-selection {
+            background-color: orangered;
+            color: black;
+        }
+
+        ::marker {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, aliquid. Labore quaerat veniam sint eligendi
+        saepe suscipit fuga quas, excepturi aperiam similique sed temporibus porro sit velit soluta, repellendus quo?
+    </p>
+
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+    </p>
+
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+
+
+</body>
+
+</html>
