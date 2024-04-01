@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      @keyframes changeColor {
+        from {
+          background-color: red;
+        }
+        50% {
+          background-color: green;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(500%);
+          border-radius: 50%;
+        }
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate3d(0, 0, 0, 0deg);
+        }
+        to {
+          transform: rotate3d(1, 1, 1, 360deg);
+        }
+      }
+
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: changeColor;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+
+      .box2 {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        background-color: red;
+        animation: move 2s linear alternate infinite;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        background-color: green;
+        animation: rotate 5s infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box1">box</div>
+    <div class="box2">box</div>
+    <div style="perspective: 500px">
+      <div class="box3">box</div>
+    </div>
+  </body>
+</html>
