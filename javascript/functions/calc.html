@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      .calculator {
+        width: 200px;
+        box-shadow: 0 0 2px #ccc;
+        padding: 15px;
+        margin: 15px auto;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="t1" type="number" />
+      <input id="t2" type="number" />
+      <input id="t3" type="number" />
+      <button onclick="sum()">+</button>
+      <button onclick="subs()">-</button>
+      <button onclick="cc()">c</button>
+    </div>
+    <script>
+      function sum() {
+        let n1 = parseFloat(document.getElementById("t1").value);
+        let n2 = parseFloat(document.getElementById("t2").value);
+        let result = n1 + n2;
+        document.getElementById("t3").value = result;
+      }
+      function subs() {
+        let n1 = parseFloat(document.getElementById("t1").value);
+        let n2 = parseFloat(document.getElementById("t2").value);
+        let result = n1 - n2;
+        document.getElementById("t3").value = result;
+      }
+      function cc() {
+        document.getElementById("t1").value = "";
+        document.getElementById("t2").value = "";
+        document.getElementById("t3").value = "";
+      }
+    </script>
+  </body>
+</html>
