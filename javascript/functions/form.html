@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <input id="t1" type="text" oninput="handleChange()" />
+    <p id="mytext"></p>
+    <input id="range" oninput="getValue()" type="range" min="0" max="100" />
+    <p id="p1"></p>
+    <script>
+      function handleChange() {
+        let el = document.getElementById("t1");
+        let data = el.value;
+        el.value = data.toUpperCase();
+        document.getElementById("mytext").innerHTML = data.toUpperCase();
+      }
+
+      function getValue() {
+        let el = document.getElementById("range");
+        document.getElementById("p1").innerHTML = el.value;
+      }
+    </script>
+  </body>
+</html>
