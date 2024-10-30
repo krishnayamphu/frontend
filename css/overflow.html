@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        border: 2px solid red;
+        float: left;
+        margin: 30px;
+      }
+      img {
+        height: 200px;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+
+      .box1 {
+        overflow-x: hidden;
+      }
+      .box2 {
+        overflow-y: hidden;
+      }
+      .box3 {
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      incidunt nesciunt quia tempora placeat, itaque culpa nam voluptas
+      distinctio eligendi veniam eveniet doloribus obcaecati blanditiis, cum
+      numquam beatae! Culpa, modi!
+    </div>
+
+    <div class="hidden">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      incidunt nesciunt quia tempora placeat, itaque culpa nam voluptas
+      distinctio eligendi veniam eveniet doloribus obcaecati blanditiis, cum
+      numquam beatae! Culpa, modi!
+    </div>
+
+    <div class="scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      incidunt nesciunt quia tempora placeat, itaque culpa nam voluptas
+      distinctio eligendi veniam eveniet doloribus obcaecati blanditiis, cum
+      numquam beatae! Culpa, modi!
+    </div>
+
+    <div>
+      <img src="cat.PNG" alt="" />
+    </div>
+    <div class="box1">
+      <img src="cat.PNG" alt="" />
+    </div>
+    <div class="box2">
+      <img src="cat.PNG" alt="" />
+    </div>
+    <div class="box3">
+      <img src="cat.PNG" alt="" />
+    </div>
+  </body>
+</html>
