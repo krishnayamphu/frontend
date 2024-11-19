@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.775);
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+      .container {
+        width: 90%;
+        height: 150px;
+        margin: 15px auto;
+        border: 2px solid darkblue;
+        float: none;
+        background-color: transparent;
+        perspective: 500px;
+        transform-style: preserve-3d;
+      }
+      .box1 {
+        transform: rotateY(0deg);
+        position: absolute;
+      }
+      .box2 {
+        position: absolute;
+        transform: rotateY(70deg) translateY(20px);
+        background-color: rgba(137, 43, 226, 0.819);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">Visible</div>
+      <div class="box2">Hidden</div>
+    </div>
+  </body>
+</html>
