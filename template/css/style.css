@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #ff3b00;
+  --secondary-color: #050a1e;
+}
+/* override */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.btn-primary {
+  background-color: #ff3b00;
+  border-color: #ff3b00;
+}
+.btn-primary:hover {
+  background-color: #de3502;
+  border-color: #de3502;
+}
+
+/* hero-banner */
+.hero-banner {
+  height: 100vh;
+  background-image: url(../images/hero-bg.png);
+  background-size: cover;
+}
+
+.hero-banner h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.hero-banner .hero-thumb {
+  max-height: 600px;
+}
+@keyframes rotate-hero-shape {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero-banner .hero-shape {
+  animation: rotate-hero-shape 10s linear infinite;
+  width: 300px;
+  top: 25%;
+}
+.rounded-bar {
+  height: 6px;
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  left: -16px;
+  top: 40%;
+}
+.play-circle {
+  width: 62px;
+  height: 62px;
+  line-height: 58px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.play-icon-lg {
+  color: var(--primary-color);
+  font-size: 50px;
+}
