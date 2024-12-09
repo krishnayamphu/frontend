@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="range"
+      id="myrange"
+      min="0"
+      max="100"
+      value="50"
+      oninput="slider()"
+    />
+    <p id="lbltext" for="myrange"></p>
+
+    <hr />
+
+    <input type="text" id="tbox" oninput="checkLen()" />
+    <p id="tlen"></p>
+
+    <script>
+      function slider() {
+        let data = document.getElementById("myrange").value;
+        document.getElementById("lbltext").innerHTML = data;
+      }
+
+      function checkLen() {
+        let data = document.getElementById("tbox").value;
+        document.getElementById("tlen").innerHTML = data.length;
+      }
+    </script>
+  </body>
+</html>
