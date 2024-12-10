@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        background-color: pink;
+        padding: 15px;
+      }
+      p {
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h3>Hello World</h3>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sit
+        explicabo laudantium commodi animi nostrum aperiam magnam rerum vitae
+        soluta assumenda distinctio, dolores est quia ducimus necessitatibus
+        recusandae optio excepturi?
+      </p>
+
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sit
+        explicabo laudantium commodi animi nostrum aperiam magnam rerum vitae
+        soluta assumenda distinctio, dolores est quia ducimus necessitatibus
+        recusandae optio excepturi?
+      </p>
+      <button>More</button>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#second").slideUp();
+
+        //toggle paragraph
+        $("button").click(function () {
+          $("#second").slideDown(1000);
+        });
+      });
+    </script>
+  </body>
+</html>
