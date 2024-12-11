@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: aquamarine;
+        padding: 15px;
+      }
+      #sidenav {
+        background-color: burlywood;
+        display: inline-block;
+        height: calc(100vh - 50px);
+      }
+      #sidenav a {
+        display: block;
+        padding: 10px 30px;
+      }
+      .d-none {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button id="btnopen">open</button>
+      <button id="btnclose" class="d-none">close</button>
+    </nav>
+    <div id="sidenav" class="d-none">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Home</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btnopen").click(function () {
+          $("#sidenav").removeClass("d-none");
+          $("#btnopen").addClass("d-none");
+          $("#btnclose").removeClass("d-none");
+        });
+
+        $("#btnclose").click(function () {
+          $("#sidenav").addClass("d-none");
+          $("#btnclose").addClass("d-none");
+          $("#btnopen").removeClass("d-none");
+        });
+      });
+    </script>
+  </body>
+</html>
