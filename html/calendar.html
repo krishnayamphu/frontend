@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      table {
+        width: 300px;
+        margin: 15px auto;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th,
+      td {
+        border: 1px solid rgb(232, 232, 232);
+        padding: 10px 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      .text-danger {
+        color: red;
+      }
+      .holiday {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th class="text-danger">Sat</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="text-danger">7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="holiday">4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="text-danger">7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td class="text-danger">3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="text-danger">7</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
