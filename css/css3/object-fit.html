@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      img {
+        width: 200px;
+        height: 300px;
+        border: 1px solid red;
+        margin: 15px auto;
+        background-repeat: no-repeat;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .top {
+        object-position: top;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../cat.PNG" alt="" />
+    <img class="cover" src="../cat.PNG" alt="" />
+    <img class="contain" src="../cat.PNG" alt="" />
+    <img class="contain" src="../cat.PNG" alt="" />
+    <img class="contain top" src="../cat.PNG" alt="" />
+  </body>
+</html>

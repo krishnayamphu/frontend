@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 15px auto;
+        border: 2px solid red;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.5s;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        transition: all 0.5s;
+      }
+      div:hover img {
+        width: 125px;
+        height: 125px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="../css/cat.PNG" alt="" />
+    </div>
+  </body>
+</html>
