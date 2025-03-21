@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      form {
+        width: 50%;
+        margin: 0 auto;
+      }
+      form input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+      }
+      form input[type="checkbox"],
+      form input[type="radio"] {
+        width: 10%;
+      }
+    </style>
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="enter username"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        required
+      />
+      <input type="search" placeholder="search" />
+      <input type="checkbox" checked /> basic <input type="checkbox" /> graphics
+      <input type="number" value="400" readonly />
+
+      <input type="radio" name="gender" /> Male
+      <input name="gender" type="radio" /> Female
+      <input type="file" />
+      <input type="datetime-local" />
+      <input type="month" />
+      <input type="range" value="50" min,100 />
+      <textarea rows="5" colo="12"></textarea>
+      <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
