@@ -1,0 +1,74 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.signin {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #f4f4f4;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: center;
+}
+.input-group a {
+  text-decoration: none;
+  color: #1366f2;
+  margin-left: 80px;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1366f2;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+form button:hover {
+  background: #0b4d91;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+.register a {
+  text-decoration: none;
+  color: #1366f2;
+}
+
+.signup-with-social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  color: #1366f2;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+.social-icons a:hover {
+  color: #91120b;
+}
