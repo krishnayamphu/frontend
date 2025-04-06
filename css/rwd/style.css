@@ -51,7 +51,7 @@ p {
   main {
     flex-direction: column;
     gap: 20px;
-    width: 90;
+    width: 94;
   }
   main section,
   main aside {
