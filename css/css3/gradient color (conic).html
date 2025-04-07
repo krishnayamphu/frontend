@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        border: 1px solid black;
+        float: left;
+      }
+      .box1 {
+        background-image: conic-gradient(red, blue);
+      }
+      .box2 {
+        background-image: conic-gradient(at 70% 50%, red, blue);
+      }
+      .box3 {
+        background-image: conic-gradient(from 45deg, red, blue);
+      }
+
+      .box4 {
+        background-image: conic-gradient(from 45deg at 70% 60%, red, blue);
+      }
+
+      .box5 {
+        background-image: conic-gradient(red, blue, yellow, green, red);
+      }
+      .box6 {
+        background-image: conic-gradient(
+          red 90deg,
+          blue 90deg,
+          blue 180deg,
+          green 180deg,
+          green 270deg,
+          yellow 270deg
+        );
+      }
+      .box7 {
+        background-image: repeating-conic-gradient(red, blue, yellow, red 10%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+  </body>
+</html>
