@@ -1,0 +1,27 @@
+:root {
+  --bs-primary: #01bf86;
+  --bs-primary-rgb: #01bf86;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.hero-banner {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.btn-action-link {
+  background-color: var(--bs-primary) !important;
+  border: 2px solid var(--bs-primary) !important;
+  transition: all 0.3s;
+}
+.btn-action-link:hover {
+  background-color: transparent !important;
+  color: var(--bs-primary) !important;
+}
