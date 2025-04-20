@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      * {
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    Name:
+    <input type="text" id="name" oninput="changeCase()" />
+    <script>
+      function changeCase() {
+        const data = document.getElementById("name").value;
+        document.getElementById("name").value = data.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
