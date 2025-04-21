@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <h1>Digital Clock</h1>
+    <div id="clock"></div>
+    <script>
+      setInterval("clock()", 1);
+
+      function clock() {
+        let date = new Date();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+        let ms = date.getMilliseconds();
+        let ampm = hour >= 12 ? "PM" : "AM";
+        if (hour > 12) {
+          hour = hour - 12;
+        }
+        let time = hour + ":" + minute + ":" + second + ":" + ms + " " + ampm;
+        document.getElementById("clock").innerHTML = time;
+      }
+    </script>
+  </body>
+</html>
