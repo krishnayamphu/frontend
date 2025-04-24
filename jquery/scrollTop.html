@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        width: 80%;
+        margin: 30px auto;
+      }
+      p {
+        line-height: 1.6;
+      }
+      header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        transition: all 0.3s ease-in-out;
+      }
+      nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+      }
+      nav ul li a {
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+      }
+      .hero-banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(food.jpg);
+        background-size: cover;
+      }
+
+      .is-pinned {
+        height: 90px;
+        background-color: white;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+      }
+      .is-pinned a {
+        color: black;
+      }
+      .is-pinned ul li a {
+        padding: 5px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Brand Name</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-banner"></section>
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+
+    <div>
+      <h1>Welcome to jQuery</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto,
+        corporis accusamus nam hic saepe cumque facere odio quidem rem ab
+        officiis esse praesentium odit. Obcaecati dignissimos molestiae culpa
+        distinctio aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Architecto, corporis accusamus nam hic saepe cumque facere odio
+        quidem rem ab officiis esse praesentium odit. Obcaecati dignissimos
+        molestiae culpa distinctio aperiam! Lorem ipsum dolor sit amet,
+      </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).scroll(function () {
+        if ($(this).scrollTop() >= 150) {
+          $("header").addClass("is-pinned");
+        } else {
+          $("header").removeClass("is-pinned");
+        }
+      });
+    </script>
+  </body>
+</html>
